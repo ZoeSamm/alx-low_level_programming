@@ -1,23 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - print the string in the put function
- *
- * Description: using the main function
- * this program prints "programming is like a multillingal puzzle
- * Return: 0
+ * main - print the size of various types
+ * Description: prints the size of various types on the computer it is compiled
+ * and run on
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char c;
-	int i;
-	long li;
-	long long lli;
-	float f;
-
-	printf("size of a char: %d byte(s)\n", sizeof(c));
-	printf("size of an int: %d byte(s)\n", sizeof(i));
-	printf("size of a long int: %d byte(s)\n", sizeof(li));
-	printf("size of a long long int: %d byte(s)\n", sizeof(lli));
-	printf("size of float: %d byte(s)\n", sizeof(f));
+printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
+printf("Size of an int: %d byte(s)\n", (int) sizeof(int));
+printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
+printf("Size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
+printf("Size of a float: %d byte(s)\n", (int) sizeof(float));
 	return (0);
 }
