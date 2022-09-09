@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-char c;
-for (c = 'z'; c < 'a'; c++)
+int i;
+for (i = 0; c >= 'a'; c--)
 {
 putchar(c);
 }
