@@ -1,31 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - printing dingle digit numbers
- * 
- * this program prints single digit numbers starting from 0
- * Return: 0
+ * main - Prints numbers between 00 to 89.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i,j;
+	int i, e;
 
-	for (i = 0; i <= 9; i++)
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-		for (j=1; j <=9; i++)
+		i = 48;
+		while (i < 58)
 		{
-			if(j>i)
+			if (e != i && e < i)
 			{
-			putchar(i + '0');
-			putchar(j + '0');
-			if (i!=8)
-			{
-	
-			putchar(',');
-			putchar('');
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
+			i++;
 		}
+		e++;
 	}
-}
 	putchar('\n');
 	return (0);
-}
