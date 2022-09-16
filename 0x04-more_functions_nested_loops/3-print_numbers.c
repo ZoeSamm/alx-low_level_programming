@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
- * print_numbers - Print numbers between 0 through 9 using ASCII values
- *
- * Return: void
- * print_numbers - prints numbers between 0 to 9.
- * Return: no return.
+ * print_numbers - prints the numbers, from 0 to 9,
+ * followed by a new line
  */
 void print_numbers(void)
 {
-	for (int c = 48; c < 58; c ++)
-	int ch;
+	int i;
 
-	for (ch = 48; ch < 58; ch++)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(c);
-		_putchar(ch);
+		_putchar(i + '0');
 	}
+
 	_putchar('\n');
 }
